@@ -1,0 +1,331 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f1eadf;
+color: #29251f;
+line-height: 1.6;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #2d241d;
+color: white;
+}
+
+.menu {
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.menu h2 {
+font-size: 24px;
+}
+
+.menu ul {
+list-style: none;
+
+display: flex;
+gap: 25px;
+
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+main {
+max-width: 1200px;
+margin: auto;
+padding: 40px 20px;
+}
+
+.apresentacao {
+text-align: center;
+padding: 60px 20px;
+margin-bottom: 40px;
+background-color: #d6c2a8;
+border-radius: 12px;
+}
+
+.apresentacao h1 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.apresentacao p {
+max-width: 700px;
+margin: 0 auto 25px;
+}
+
+.botao {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 20px;
+background-color: #704c2c;
+color: white;
+
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+
+}
+
+.botao:hover {
+background-color: #4e341f;
+}
+
+.produtos {
+margin-bottom: 50px;
+}
+
+.produtos h2 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 30px;
+}
+
+.grade-produtos {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+
+}
+
+.produto {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+
+
+}
+
+.produto img {
+width: 100%;
+height: 190px;
+object-fit: contain;
+margin-bottom: 15px;
+
+}
+
+.produto h3 {
+margin-bottom: 10px;
+}
+
+.produto p {
+margin-bottom: 10px;
+}
+
+.preco {
+display: block;
+font-size: 22px;
+font-weight: bold;
+color: #704c2c;
+margin-top: auto;
+
+}
+
+.sobre {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 10px;
+margin-bottom: 30px;
+
+}
+
+.sobre h2 {
+margin-bottom: 15px;
+}
+
+.sobre ul {
+padding-left: 25px;
+}
+
+.detalhes h1 {
+text-align: center;
+margin-bottom: 40px;
+font-size: 36px;
+}
+
+.produto-detalhes {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+background-color: white;
+padding: 30px;
+border-radius: 10px;
+
+}
+
+.produto-detalhes img {
+width: 100%;
+height: 400px;
+object-fit: contain;
+
+}
+
+.informacoes h2,
+.informacoes h3 {
+margin-bottom: 15px;
+}
+
+.informacoes p {
+margin-bottom: 15px;
+}
+
+.informacoes ul {
+padding-left: 25px;
+margin-bottom: 20px;
+}
+
+.historia,
+.outros-produtos {
+background-color: white;
+padding: 30px;
+margin-top: 30px;
+border-radius: 10px;
+
+}
+
+.historia h2,
+.outros-produtos h2 {
+margin-bottom: 15px;
+}
+
+.outros-produtos ul {
+padding-left: 25px;
+}
+
+.contato {
+max-width: 700px;
+margin: 0 auto;
+background-color: white;
+padding: 35px;
+border-radius: 10px;
+
+}
+
+.contato h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.contato > p {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.campo {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+
+}
+
+.campo label {
+margin-bottom: 6px;
+font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+font-family: Arial, sans-serif;
+padding: 12px;
+border: 1px solid #aaa;
+border-radius: 6px;
+font-size: 16px;
+
+}
+
+.campo input:focus,
+.campo textarea:focus {
+outline: 2px solid #704c2c;
+}
+
+button {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 6px;
+background-color: #704c2c;
+color: white;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+button:hover {
+background-color: #4e341f;
+}
+
+.informacoes-contato {
+background-color: white;
+padding: 30px;
+margin-top: 30px;
+border-radius: 10px;
+
+}
+
+.informacoes-contato ul {
+padding-left: 25px;
+}
+
+footer {
+background-color: #2d241d;
+color: white;
+text-align: center;
+padding: 25px;
+margin-top: 40px;
+
+}
+
+@media (max-width: 900px) {
+.grade-produtos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.produto-detalhes {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.menu {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.apresentacao h1 {
+    font-size: 30px;
+}
+
+.grade-produtos {
+    grid-template-columns: 1fr;
+}
+
+}

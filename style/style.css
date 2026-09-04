@@ -1,15 +1,47 @@
 body {
 font-family: Arial, sans-serif;
 background-color: #f1eadf;
-color: #29251f;
+color: #291f27;
 line-height: 1.6;
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
 
+body.ativo {
+    background-color: #222;
+    color: white;
+}
+
+body.ativo .produto {
+    background-color: #333;
+    color: white;
+}
+
+body.ativo .sobre {
+    background-color: #333;
+    color: white;
+}
+
+body.ativo .apresentacao {
+    background-color: #333;
+    color: white;
+}
+
+/* Botão do modo escuro*/
+.menu #btn-tema {
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+/* Mantém o título em uma linha só sem quebrar */
+.menu h2 {
+    white-space: nowrap;
+}
+
 header {
-background-color: #2d241d;
+background-color: #41342a;
 color: white;
 }
 
@@ -73,7 +105,7 @@ margin: 0 auto 25px;
 display: inline-block;
 margin-top: 15px;
 padding: 10px 20px;
-background-color: #704c2c;
+background-color: #8d613b;
 color: white;
 
 text-decoration: none;
@@ -132,7 +164,7 @@ margin-bottom: 10px;
 display: block;
 font-size: 22px;
 font-weight: bold;
-color: #704c2c;
+color: #8d613b;
 margin-top: auto;
 }
 
@@ -323,4 +355,17 @@ margin-top: 40px;
     grid-template-columns: 1fr;
 }
 
+}
+
+/* Mensagem exibida quando o formulário é enviado */
+.sucesso {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.preencher {
+    color: rgb(211, 33, 33);
+    font-weight: bold;
+    margin-top: 15px;
 }
